@@ -1,0 +1,9 @@
+
+
+.background-image-container
+{
+    background-image: url('https://cloud.papercrowns.com/image/upload/c_fill,w_1920,h_200,q_auto/v1/sentinels/content/team-header.png?v=65bd416c17af1');
+    background-size: cover;
+    background-position: center;
+    height: 200px; 
+}
