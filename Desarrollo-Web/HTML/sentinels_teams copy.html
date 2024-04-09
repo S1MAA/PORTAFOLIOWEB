@@ -15,6 +15,17 @@
 
     <style>
 
+        .logoheather
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-container {
+            max-width: 100%;
+            height: auto;
+        }
+
         .row
         {
             background: red;
@@ -33,6 +44,12 @@
             height: 200px;
         }
 
+        #barraop  
+        {
+            list-style-type: none;
+            display: flex;
+            gap: 16px;
+        }
 
     </style>
 
@@ -46,54 +63,45 @@
         <!--ROW HOLA CONTIENE EL HEATHER -->
         <div class="row hola">
 
-            <div class="columna col-2">
-                HOLA
+            <div class="columna col-2 logoheather">
+                <div class="img-container">
+                    <img src="../IMG/sentinels.svg" class="img-fluid" alt="Descripción del logo">
+                </div>
             </div>
 
             <div class="columna col-9">
                 <div class="row hola">
-                    <div class="columna col-auto">
-                        <p>About</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>History</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>Championships</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>Investors</p>
-                    </div>
-                    <div class="columna col">
-                    </div>
+                    <header>
+                        <nav>
+                            <ul id="barraop">
+                                <li>About</li>
+                                <li>History</li>
+                                <li>Championships</li>
+                                <li>Investors</li>                
+                            </ul>
+                        </nav>
+                    </header>
                 </div>
-
+            
                 <div class="row hola">
-                    <div class="columna col-auto">
-                        <p>HOME</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>PARTNERS</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>TEAMS</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>CONTENT</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>SEN SOCIETY</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>NEWS</p>
-                    </div>
-                    <div class="columna col-auto">
-                        <p>SHOPS</p>
-                    </div>
+                    <header>
+                        <nav>
+                            <ul id="barraop">
+                                <li>HOME</li>
+                                <li>PARTNERS</li>
+                                <li>TEAMS</li>
+                                <li>CONTENT</li>
+                                <li>SEN SOCIETY</li>
+                                <li>NEWS</li>
+                                <li>SHOPS</li>                
+                            </ul>
+                        </nav>
+                    </header>
                 </div>
             </div>
+            
 
-            <div class="columna col-1">
+            <div class="columna col-1 logoheather">
                 <p>HOLA</p>
             </div>
 
@@ -102,7 +110,6 @@
     </div>
 
     <div class="container-fluid" style="width: 97%; margin-top: 52px;">
-
             <!-- TEXTO MEET OUR TEAMS -->
         <div class="row">
             <div class="col">
@@ -210,53 +217,53 @@
             <div class="col-2 columna">
                 
                     <div class="row">
-                        COMPANY
+                    COMPANY
                     </div>
                     <div class="row">
-                        Teams
+                    Teams
                     </div>
                     <div class="row">
-                        Creators
+                    Creators
                     </div>
                     <div class="row">
-                        San Society
+                    San Society
                     </div>
                     <div class="row">
-                        History
+                    History
                     </div>
                     <div class="row">
-                        News
-                    </div>
+                    News
+                    </div> 
             </div>
 
-            <div class="col-2 columna">
+                <div class="col-2 columna">
                 
                     <div class="row">
-                        TERMS & POLICIES
+                    TERMS & POLICIES
                     </div>
                     <div class="row">
-                        Privacy
+                    Privacy
                     </div>
                     <div class="row">
-                        Terms & Conditions
-                    </div>
-            </div>
+                    Terms & Conditions
+                    </div> 
+                </div>
 
-            <div class="col-2 columna">
+                <div class="col-2 columna">
                 
                     <div class="row">
-                        SHOP
+                    SHOP
                     </div>
                     <div class="row">
-                        Shop
+                    Shop
                     </div>
                     <div class="row">
-                        Returns Policy
+                    Returns Policy
                     </div>
                     <div class="row">
-                        Shipping Policy
+                    Shipping Policy
                     </div>
-            </div>
+                </div>
 
 
 
@@ -265,10 +272,7 @@
         
 
 
-    </div>
-        
-    
-  
+    </div> 
 
 </body>
 
