@@ -24,6 +24,8 @@
         .img-container {
             max-width: 100%;
             height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         .row
@@ -35,19 +37,23 @@
             background: lightgray;
             border: 1px solid black;
         }
-        .hola{
-            height: 50px;
-        }
 
-        .coret
+        .img-fluid
         {
-            height: 200px;
+            max-width: 100%;
+            height: auto;   
         }
 
         #barraop  
         {
             list-style-type: none;
             display: flex;
+            gap: 16px;
+        }
+
+        #footercontent  
+        {
+            list-style-type: none;
             gap: 16px;
         }
 
@@ -61,19 +67,19 @@
 
 
         <!--ROW HOLA CONTIENE EL HEATHER -->
-        <div class="row hola">
+        <div class="row">
 
             <div class="columna col-2 logoheather">
                 <div class="img-container">
-                    <img src="../IMG/sentinels.svg" class="img-fluid" alt="Descripción del logo">
+                    <img src="../IMG/sentinels.svg" class="img-container" alt="Descripción del logo">
                 </div>
             </div>
 
             <div class="columna col-9">
-                <div class="row hola">
+                <div class="row">
                     <header>
                         <nav>
-                            <ul id="barraop">
+                            <ul id="barraop" style="padding-top: 10px;">
                                 <li>About</li>
                                 <li>History</li>
                                 <li>Championships</li>
@@ -83,10 +89,10 @@
                     </header>
                 </div>
             
-                <div class="row hola">
+                <div class="row">
                     <header>
                         <nav>
-                            <ul id="barraop">
+                            <ul id="barraop" style="padding-top: 10px;">
                                 <li>HOME</li>
                                 <li>PARTNERS</li>
                                 <li>TEAMS</li>
@@ -109,16 +115,18 @@
 
     </div>
 
-    <div class="container-fluid" style="width: 97%; margin-top: 52px;">
-            <!-- TEXTO MEET OUR TEAMS -->
+            <!-- IMGEN DESPUÉS DEL HEATHER -->
+    <div class="container-fluid" style="width: 97%;">
+            
         <div class="row">
-            <div class="col">
+            <div class="col g-0">
                 <img src="../IMG/sentinelsheather.png" class="img-fluid" alt="Imagen responsiva">
             </div>
         </div> 
+            <!-- TEXTO MEET OUR TEAMS -->
         <div class="row">
                 <div class="col-12">
-                    MEET OUR TEAMS
+                    <h1>MEET OUR TEAMS</h1>
                 </div>
                 <div class="col-12">
                     Home to world-class talent competing in VALORANT, Halo and Apex Legends.
@@ -128,17 +136,25 @@
             
         <!-- TEAMS -->
         <div class="row" style="background-color: aquamarine;">
-                <div class="col-3">
-                    VALORANT
+                <div class="col-md-3 sm-1" id="col-teams">
+                    <div class="rectangulo">
+                        <img src="https://cloud.papercrowns.com/image/upload/c_pad,h_256,w_256,co_rgb:ffffff,e_colorize:100,f_png,q_auto/v1/sentinels/game/valorant.svg?v=655aba83b6cca" class="img-teams">
+                    </div>
                 </div>
-                <div class="col-3">
-                    HALO
+                <div class="col-md-3 sm-1" id="col-teams">
+                    <div class="rectangulo">
+                        <img src="https://cloud.papercrowns.com/image/upload/c_pad,h_256,w_256,co_rgb:ffffff,e_colorize:100,f_png,q_auto/v1/sentinels/game/halo.svg?v=655abb1725258" class="img-teams">
+                    </div>
                 </div>
-                <div class="col-3">
-                    Apex LEGENDS
+                <div class="col-md-3 sm-1" id="col-teams">
+                    <div class="rectangulo">
+                        <img src="https://cloud.papercrowns.com/image/upload/c_pad,h_256,w_256,co_rgb:ffffff,e_colorize:100,f_png,q_auto/v1/sentinels/game/apex-legends.svg?v=655abbabab455" class="img-teams">
+                    </div>
                 </div>
-                <div class="col-3">
-                    CREATORS
+                <div class="col-md-3 sm-1" id="col-teams">
+                    <div class="rectangulo">
+                        <img src="https://cloud.papercrowns.com/image/upload/c_pad,h_256,w_256,co_rgb:ffffff,e_colorize:100,f_png,q_auto/v1/sentinels/game/content-creators.svg?v=65b252ce60600" class="img-teams">
+                    </div>
                 </div>
         </div>
 
@@ -163,106 +179,77 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-1 columna">
-                        1
-                    </div>
-                    <div class="col-1 columna">
-                        2
-                    </div>
-                    <div class="col-1 columna">
-                        3
-                    </div>
-                    <div class="col-1 columna">
-                        4
-                    </div>
-                    <div class="col-1 columna">
-                        5
-                    </div>
-                    <div class="col-1 columna">
-                        6
-                    </div>
-                    <div class="col-1 columna">
-                        7
-                    </div>
+
+                    <nav>
+                        <ul id="barraop">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>                
+                        </ul>
+                    </nav>
+
                 </div>
 
-                <div class="row">
-                    a
-                </div>
-            </div>
-
-            <div class="col-2 columna">
-
-                <div class="row">
-                    ABOUT
-                </div>
-                <div class="row">
-                    Who we are
-                </div>
-                <div class="row">
-                    Championships
-                </div>
-                <div class="row">
-                    Partners
-                </div>
-                <div class="row">
-                    Management Team
-                </div>
-                <div class="row">
-                    Brand Toolkit
-                </div>
 
             </div>
 
             <div class="col-2 columna">
-                
-                    <div class="row">
-                    COMPANY
-                    </div>
-                    <div class="row">
-                    Teams
-                    </div>
-                    <div class="row">
-                    Creators
-                    </div>
-                    <div class="row">
-                    San Society
-                    </div>
-                    <div class="row">
-                    History
-                    </div>
-                    <div class="row">
-                    News
-                    </div> 
+
+                <nav>
+                    <ul id="footercontent">
+                        <li>ABOUT</li>
+                        <li>Who we are</li>
+                        <li>Championships</li>
+                        <li>Partners</li>
+                        <li>Management Team</li>
+                        <li>Brand Toolkit</li>              
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="col-2 columna">
+
+                <nav>
+                    <ul id="footercontent">
+                        <li>COMPANY</li>
+                        <li>Teams</li>
+                        <li>Creators</li>
+                        <li>Sen Society</li>
+                        <li>History</li>
+                        <li>News</li>              
+                    </ul>
+                </nav>
+
             </div>
 
                 <div class="col-2 columna">
-                
-                    <div class="row">
-                    TERMS & POLICIES
-                    </div>
-                    <div class="row">
-                    Privacy
-                    </div>
-                    <div class="row">
-                    Terms & Conditions
-                    </div> 
+
+                    <nav>
+                        <ul id="footercontent">
+                            <li>TERMS & POLICIES</li>
+                            <li>Privacy</li>
+                            <li>Terms & Conditions</li>            
+                        </ul>
+                    </nav>
+
                 </div>
 
                 <div class="col-2 columna">
-                
-                    <div class="row">
-                    SHOP
-                    </div>
-                    <div class="row">
-                    Shop
-                    </div>
-                    <div class="row">
-                    Returns Policy
-                    </div>
-                    <div class="row">
-                    Shipping Policy
-                    </div>
+
+                    <nav>
+                        <ul id="footercontent">
+                            <li>SHOP</li>
+                            <li>Shop</li>
+                            <li>Returns Policy</li>
+                            <li>Shipping Policy</li>            
+                        </ul>
+                    </nav>
+
                 </div>
 
 
