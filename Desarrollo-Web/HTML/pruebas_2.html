@@ -20,100 +20,81 @@
 
 
     <style>
-      .logoheather {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .img-container {
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-      }
 
-      .columna {
-        background: lightgray;
-        border: 1px solid black;
-      }
 
       .img-fluid {
         max-width: 100%;
         height: auto;
       }
 
-      #barraop {
+      .barraop {
         list-style-type: none;
         display: flex;
         gap: 16px;
+        padding-left: 0px;
       }
 
-      #footercontent {
+      .footercontent {
         list-style-type: none;
-        gap: 16px;
-      }
-
-      #imglogonavigationbar
-      {
-        padding-top: 40px;
-        padding-bottom: 40px;
-        padding-right: 32px;
-        padding-left: 32px;
       }
 
     </style>
   </head>
 
-  <body>
+  <body style="background-color: black;">
     <nav class="navbar navbar-light navbar-expand-md bg-dark" style="--bs-navbar-padding-y: 0 rem;">
-        <div class="container-fluid g-0"">
-            <a class="navbar-brand" href="#" style="background-color: blue ;padding:0; margin: 0;">
-                <img src="../IMG/sentinels.svg" id="imglogonavigationbar"  alt="Logo Sentinels" width="100%">
-            </a>
+      <div class="container-fluid g-0 container-header">
+          <a class="navbar-brand" href="#" style="padding:0; margin: 0;">
+              <img src="https://cdn.sentinels.gg/images/logos/sentinels.svg" id="imglogonavigationbar"  alt="Logo Sentinels" width="100%">
+          </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <div id="navbarContent" class="collapse navbar-collapse">
+              <div class="row w-100">
+                  <div class="col-12 firstnavfile" >
+                      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">History</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Championships</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-12 secondnavfile">
+                      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                          <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">PARTNERS</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">TEAMS</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">CONTENT</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">SEN SOCIETY</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
+                          <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
 
-            <div id="navbarContent" class="collapse navbar-collapse" style="background-color: blueviolet">
-                <div class="row w-100">
-                    <div class="col-12">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">History</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Championships</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Investors</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">PARTNERS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">TEAMS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">CONTENT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SEN SOCIETY</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="d-none d-md-block text-end ">
+              <button class="btn btn-outline-light me-2 border-0" type="button">
+                  <i class="fa fa-user"></i>
+              </button>
+          </div>
+          <div class="d-flex order-3">
+            <div class="text-end ms-auto">
+              <button class="btn btn-outline-light border-0" type="button">
+                <i class="fa fa-shopping-bag"></i>
+              </button>
             </div>
-
-            <div class="d-none d-md-block text-end ">
-                <button class="btn btn-outline-light me-2 " type="button">
-                    <i class="fa fa-user"></i>
-                </button>
-                <button class="btn btn-outline-light" type="button">
-                    <i class="fa fa-shopping-bag"></i>
-                </button>
-            </div>
-            
-        </div>
-    </nav>
-    
+            <button class="navbar-toggler white-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                  <i class="fas fa-bars" style="color: white; font-size: 28px;"></i>
+                </span>
+            </button>   
+          </div>         
+          
+      </div>
+  </nav>
     
     <!-- IMGEN DESPUÉS DEL HEATHER -->
-    <div class="container-fluid" style="width: 97%">
+    <div class="container-fluid" style="width: 98%">
       <div class="row">
         <div class="col g-0">
           <img
@@ -124,18 +105,18 @@
         </div>
       </div>
       <!-- TEXTO MEET OUR TEAMS -->
-      <div class="row">
-        <div class="col-12">
+      <div class="row mot">
+        <div class="col-12 g-0">
           <h1>MEET OUR TEAMS</h1>
         </div>
-        <div class="col-12">
+        <div class="textoMOT col-12 g-0">
           Home to world-class talent competing in VALORANT, Halo and Apex
           Legends.
         </div>
       </div>
 
       <!-- TEAMS -->
-      <div class="row" style="background-color: aquamarine">
+      <div class="row" style="background-color: rgb(0, 0, 0)">
         <div class="col-md-3 sm-1" id="col-teams">
           <div class="rectangulo">
             <img
@@ -171,76 +152,75 @@
       </div>
 
       <!-- FOOTER -->
-      <div class="foooter row">
-        <div class="col-4 columna">
-          <div class="row">a</div>
+      <div class="footer row">
 
-          <div class="row">LOGO</div>
-
-          <div class="row">© 2024 Sentinels. All rights reserved</div>
-
-          <div class="row">
+        <div class="col-md-4 col-sm-12 columna colfooter order-last order-md-first">   
+            <div class="row"><img src="https://cdn.sentinels.gg/images/logos/icon.svg" style="width: 70px;" id="logofooter"></div>   
+            <div class="row g-1">© 2024 Sentinels. All rights reserved</div>   
+            <div class="row">
+                <nav>
+                    <ul class="barraop">
+                        <li><img src="../IMG/youtube.png"></li>
+                        <li><img src="../IMG/x.png"></li>
+                        <li><img src="../IMG/instagram.png"></li>
+                        <li><img src="../IMG/tik-tok.png"></li>
+                        <li><img src="../IMG/facebook.png"></li>
+                        <li><img src="../IMG/twitch.png"></li>
+                        <li><img src="../IMG/discordia.png"></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
+    
+        <div class="col-6 col-md-2 colfooter">
             <nav>
-              <ul id="barraop">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
-                <li>7</li>
-              </ul>
+                <ul class="footercontent">
+                    <li class="footertitulo">ABOUT</li>
+                    <li>Who we are</li>
+                    <li>Championships</li>
+                    <li>Partners</li>
+                    <li>Management Team</li>
+                    <li>Brand Toolkit</li>
+                </ul>
             </nav>
-          </div>
+    
         </div>
-
-        <div class="col-2 columna">
-          <nav>
-            <ul id="footercontent">
-              <li>ABOUT</li>
-              <li>Who we are</li>
-              <li>Championships</li>
-              <li>Partners</li>
-              <li>Management Team</li>
-              <li>Brand Toolkit</li>
-            </ul>
-          </nav>
+    
+        <div class="col-6 col-md-2 colfooter">
+            <nav>
+                <ul class="footercontent">
+                    <li class="footertitulo">COMPANY</li>
+                    <li>Teams</li>
+                    <li>Creators</li>
+                    <li>Sen Society</li>
+                    <li>History</li>
+                    <li>News</li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="col-2 columna">
-          <nav>
-            <ul id="footercontent">
-              <li>COMPANY</li>
-              <li>Teams</li>
-              <li>Creators</li>
-              <li>Sen Society</li>
-              <li>History</li>
-              <li>News</li>
-            </ul>
-          </nav>
+    
+        <div class="col-6 col-md-2 colfooter">
+            <nav>
+                <ul class="footercontent">
+                    <li class="footertitulo">TERMS & POLICIES</li>
+                    <li>Privacy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="col-2 columna">
-          <nav>
-            <ul id="footercontent">
-              <li>TERMS & POLICIES</li>
-              <li>Privacy</li>
-              <li>Terms & Conditions</li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="col-2 columna">
-          <nav>
-            <ul id="footercontent">
-              <li>SHOP</li>
-              <li>Shop</li>
-              <li>Returns Policy</li>
-              <li>Shipping Policy</li>
-            </ul>
-          </nav>
+    
+        <div class="col-6 col-md-2 colfooter">
+            <nav>
+                <ul class="footercontent">
+                    <li class="footertitulo">SHOP</li>
+                    <li>Shop</li>
+                    <li>Returns Policy</li>
+                    <li>Shipping Policy</li>
+                </ul>
+            </nav>
         </div>
       </div>
+
     </div>
   </body>
 </html>

@@ -1,24 +1,108 @@
+.container-header{
+    background-color: black;
+}
+.navbar-brand 
+    .navbar {
+      background-color: black; /* El color de fondo del navbar (bg-dark) */
+    }
+    .navbar-collapse {
+      background-color: black; /* El color de fondo del contenido colapsable */
+    }
+    .navbar-nav .nav-link {
+      color: white; /* Color del texto de los enlaces */
+    }
+    .navbar-nav .nav-link:hover {
+        color: #bdbdbd; /* Color del texto de los enlaces */
+    }
+    .navbar-toggler {
+      border-color: rgb(255, 255, 255); /* Color del borde del botón toggler */
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      /* Icono personalizado para el toggler */
+    }
+    .btn-outline-light {
+        color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+    .btn-outline-light:hover {
+        color: black;
+        background-color: #f8f9fa;
+    }
 
 
 
 
-.background-image-container
+
+
+@font-face 
 {
-    background-image: url('https://cloud.papercrowns.com/image/upload/c_fill,w_1920,h_200,q_auto/v1/sentinels/content/team-header.png?v=65bd416c17af1');
-    background-size: cover;
-    background-position: center;
-    height: auto; 
+    font-family: 'BlenderPro_Bold';
+    src:url('../font/BlenderPro-Heavy.woff') format('woff'); /* ruta a tus archivos WOFF en la carpeta font */
 }
 
-/* TEAMS */
+@font-face 
+{
+    font-family: 'BlenderPro';
+    src:url('../font/BlenderPro-Medium.woff') format('woff'); /* ruta a tus archivos WOFF en la carpeta font */
+}
+
+body 
+{
+    font-family: 'BlenderPro_Bold';
+    font-family: 'BlenderPro';
+}
 
 
+/* NAVIGATION BAR */
+#imglogonavigationbar
+{
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-right: 32px;
+    padding-left: 32px;
+    border-right: 1px solid rgb(23 23 23);
+}
 
-/* TEAMS */
+.firstnavfile{
+    font-family: BlenderPro;
+    font-size: 12px;
+    color: #737373;
+    border-bottom: 1px solid rgb(23 23 23);
+}
+
+.secondnavfile{
+    font-family: 'BlenderPro_Bold';
+    font-size: 16px;
+}
+
+
+/* MEET OUR TEAMS */
+.mot
+{
+    padding: 1.5%;
+    border-left: 1px solid rgb(23 23 23);
+    border-right: 1px solid rgb(23 23 23);
+}
+
+body h1 {
+    font-family: 'BlenderPro_Bold';
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.textoMOT
+{
+    font-family: 'BlenderPro';
+    font-size: 14px;
+    color: #737373;
+}
+
+/* EQUIPOS POR JUEGOS */
 
 #col-teams
 {
-    border: 1px solid #ccc;
+    border: 1px solid rgb(23 23 23);
 }
 
 .rectangulo {
@@ -27,15 +111,72 @@
     margin-left: 2%;
     width: 95%; /* Ancho del rectángulo */
     aspect-ratio: 1 / 1; /* Altura del rectángulo */
-    background-color: #1f1f1f; /* Color de fondo del rectángulo */
+    background-color: #0f0f0f; /* Color de fondo del rectángulo */
     display: flex; /* Activar flexbox */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
+    position: relative; /* Necesario para posicionar los pseudo-elementos */
+}
+.rectangulo:hover {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    width: 95%; /* Ancho del rectángulo */
+    aspect-ratio: 1 / 1; /* Altura del rectángulo */
+    background-color: #2c2c2c; /* Color de fondo del rectángulo */
+    display: flex; /* Activar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: relative; /* Necesario para posicionar los pseudo-elementos */
 }
 
+.rectangulo:before,
+.rectangulo:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.rectangulo:before {
+    border-width: 0 2rem 2rem 0; /* Triángulo superior derecho */
+    border-color: transparent #000000 transparent transparent;
+    top: 0;
+    right: 0;
+}
+
+.rectangulo:after {
+    border-width: 2rem 0 0 2rem; /* Triángulo inferior izquierdo */
+    border-color: transparent transparent transparent #000000;
+    bottom: 0;
+    left: 0;
+}
 
 
 .img-teams
 {
-    width: 45%;
+    width: 35%;
+}
+
+/* FOOTER */
+.footer{
+    font-family: BlenderPro;
+    font-size: 14px;
+    color: #737373;
+    border-left: 1px solid rgb(23 23 23);
+    border-right: 1px solid rgb(23 23 23);
+}
+
+.footertitulo{
+    font-family: BlenderPro_Bold;
+    color: #ffffff;
+}
+
+#logofooter{
+    margin-top: 5%;
+}
+
+.colfooter{
+    padding-top: 20px;
 }
