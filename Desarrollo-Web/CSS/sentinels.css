@@ -1,3 +1,24 @@
+@font-face 
+{
+    font-family: 'BlenderPro_Bold';
+    src:url('../font/BlenderPro-Heavy.woff') format('woff'); /* ruta a tus archivos WOFF en la carpeta font */
+}
+
+@font-face 
+{
+    font-family: 'BlenderPro';
+    src:url('../font/BlenderPro-Medium.woff') format('woff'); /* ruta a tus archivos WOFF en la carpeta font */
+}
+
+body 
+{
+    font-family: 'BlenderPro_Bold';
+    font-family: 'BlenderPro';
+}
+
+
+/* NAVIGATION BAR */
+
 .container-header{
     background-color: black;
 }
@@ -30,31 +51,6 @@
         background-color: #f8f9fa;
     }
 
-
-
-
-
-
-@font-face 
-{
-    font-family: 'BlenderPro_Bold';
-    src:url('../font/BlenderPro-Heavy.woff') format('woff'); /* ruta a tus archivos WOFF en la carpeta font */
-}
-
-@font-face 
-{
-    font-family: 'BlenderPro';
-    src:url('../font/BlenderPro-Medium.woff') format('woff'); /* ruta a tus archivos WOFF en la carpeta font */
-}
-
-body 
-{
-    font-family: 'BlenderPro_Bold';
-    font-family: 'BlenderPro';
-}
-
-
-/* NAVIGATION BAR */
 #imglogonavigationbar
 {
     padding-top: 15%;
@@ -118,16 +114,7 @@ body h1 {
     position: relative; /* Necesario para posicionar los pseudo-elementos */
 }
 .rectangulo:hover {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 2%;
-    width: 95%; /* Ancho del rectángulo */
-    aspect-ratio: 1 / 1; /* Altura del rectángulo */
-    background-color: #2c2c2c; /* Color de fondo del rectángulo */
-    display: flex; /* Activar flexbox */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    position: relative; /* Necesario para posicionar los pseudo-elementos */
+    background-color: #1a1a1a; /* Color de fondo del rectángulo */
 }
 
 .rectangulo:before,
