@@ -116,7 +116,7 @@ body h1 {
     margin-left: 2%;
     width: 95%; /* Ancho del rectángulo */
     aspect-ratio: 1 / 1; /* Altura del rectángulo */
-    background-color: #0a0a0a; /* Color de fondo del rectángulo */
+    background-color: #090909; /* Color de fondo del rectángulo */
     display: flex; /* Activar flexbox */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
