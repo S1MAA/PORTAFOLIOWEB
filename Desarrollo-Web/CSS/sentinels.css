@@ -58,6 +58,15 @@ body
     padding-right: 32px;
     padding-left: 32px;
     border-right: 1px solid rgb(23 23 23);
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #imglogonavigationbar {
+        padding-top: 7%;
+        padding-bottom: 7%;
+        width: 80%;
+    }
 }
 
 .firstnavfile{
@@ -107,12 +116,13 @@ body h1 {
     margin-left: 2%;
     width: 95%; /* Ancho del rectángulo */
     aspect-ratio: 1 / 1; /* Altura del rectángulo */
-    background-color: #0f0f0f; /* Color de fondo del rectángulo */
+    background-color: #0a0a0a; /* Color de fondo del rectángulo */
     display: flex; /* Activar flexbox */
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
     position: relative; /* Necesario para posicionar los pseudo-elementos */
 }
+
 .rectangulo:hover {
     background-color: #1a1a1a; /* Color de fondo del rectángulo */
 }
@@ -153,17 +163,34 @@ body h1 {
     color: #737373;
     border-left: 1px solid rgb(23 23 23);
     border-right: 1px solid rgb(23 23 23);
+    padding-top: 54px;
+    padding-bottom: 54px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.footercontent {
+    list-style-type: none;
+    padding-left: 0px;
 }
 
 .footertitulo{
     font-family: BlenderPro_Bold;
     color: #ffffff;
+    padding-bottom: 16px;
 }
 
+.subtitulosfo{
+    padding-bottom: 7px;
+}
+
+
+
 #logofooter{
-    margin-top: 5%;
+    margin-bottom: 5%;
+    
 }
 
 .colfooter{
-    padding-top: 20px;
+    padding-top: 0px;
 }
