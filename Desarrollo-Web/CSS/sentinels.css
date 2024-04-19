@@ -21,6 +21,10 @@ body
 
 .container-header{
     background-color: black;
+    border-bottom: 1px solid rgb(23 23 23);
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
 }
 .navbar-brand 
     .navbar {
@@ -29,12 +33,26 @@ body
     .navbar-collapse {
       background-color: black; /* El color de fondo del contenido colapsable */
     }
-    .navbar-nav .nav-link {
-      color: white; /* Color del texto de los enlaces */
+
+    .firstnavfile .nav-item a.nav-link {
+        color: rgb(105, 105, 105); 
+        padding: 16px 12px 16px 12px;
     }
-    .navbar-nav .nav-link:hover {
-        color: #bdbdbd; /* Color del texto de los enlaces */
+
+    .firstnavfile .nav-item a.nav-link:hover {
+        color: rgb(148, 148, 148); 
     }
+
+    .secondnavfile .nav-item a.nav-link {
+        color: white; 
+        padding: 18px 12px 18px 12px;
+    }
+
+    .secondnavfile .nav-item a.nav-link:hover {
+        color: #9c9c9c; 
+    }
+
+    
     .navbar-toggler {
       border-color: rgb(255, 255, 255); /* Color del borde del botón toggler */
     }
@@ -53,10 +71,7 @@ body
 
 #imglogonavigationbar
 {
-    padding-top: 15%;
-    padding-bottom: 15%;
-    padding-right: 32px;
-    padding-left: 32px;
+    padding: 15% 32px 15% 32px; /* arriba, derecha, abajo, izquierda */
     border-right: 1px solid rgb(23 23 23);
     width: 100%;
 }
@@ -74,20 +89,40 @@ body
     font-size: 12px;
     color: #737373;
     border-bottom: 1px solid rgb(23 23 23);
+    border-right: 1px solid rgb(23 23 23);
 }
 
 .secondnavfile{
     font-family: 'BlenderPro_Bold';
     font-size: 16px;
+    border-right: 1px solid rgb(23 23 23);
+}
+
+
+
+/* AQUÍ EMPIEZA EL SEGUNDO CONTAINER */
+
+.secondcont {
+    border-left: 1px solid rgb(23 23 23);
+    border-right: 1px solid rgb(23 23 23);
+    width: 97%; 
+    margin-top: 5.9%;
+}
+
+
+@media (max-width: 576px) {
+    .secondcont {
+        width: 100%; 
+        margin-top: calc(3.5rem + 10px);
+    }
 }
 
 
 /* MEET OUR TEAMS */
 .mot
 {
-    padding: 1.5%;
-    border-left: 1px solid rgb(23 23 23);
-    border-right: 1px solid rgb(23 23 23);
+    padding: 1.6%;
+    border-bottom: 1px solid rgb(23 23 23);
 }
 
 body h1 {
@@ -107,8 +142,9 @@ body h1 {
 
 #col-teams
 {
-    border: 1px solid rgb(23 23 23);
+    border-right: 1px solid rgb(23 23 23);
 }
+
 
 .rectangulo {
     margin-top: 5%;
@@ -160,9 +196,7 @@ body h1 {
 .footer{
     font-family: BlenderPro;
     font-size: 14px;
-    color: #737373;
-    border-left: 1px solid rgb(23 23 23);
-    border-right: 1px solid rgb(23 23 23);
+    border-top: 1px solid rgb(23 23 23);
     padding-top: 54px;
     padding-bottom: 54px;
     padding-left: 24px;
@@ -182,15 +216,155 @@ body h1 {
 
 .subtitulosfo{
     padding-bottom: 7px;
+    color: #737373;
 }
 
-
+.subtitulosfo:hover{
+    color: #ffffff;
+}
 
 #logofooter{
-    margin-bottom: 5%;
-    
+    margin-bottom: 5%;  
 }
 
-.colfooter{
-    padding-top: 0px;
+
+
+
+
+/* CUERPO DE TERCERA PÁGINA CHAMPIONS */
+
+#miVideo::-webkit-media-controls,
+#miVideo::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+#miVideo::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Ajusta el ancho para evitar la aparición de barras de desplazamiento */
+}
+
+
+
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    position: absolute;
+    bottom: 13%; /* Margen desde abajo */
+    left: 5%; /* Margen desde la izquierda */
+    color: white;
+    font-family: 'BlenderPro_Bold';
+    z-index: 1;
+}
+
+body h2 {
+    font-size: 60px; /* Tamaño de fuente relativo al ancho de la ventana */
+}
+
+.logovideo{
+    width: 50%;
+}
+
+
+.seccionchamp{
+    padding: 16px;
+    border-bottom: 1px solid rgb(23 23 23);
+}
+
+.secroja{
+    border-bottom: 1px solid #E5062F;
+}
+
+.imgsec{
+    height: 108px;
+}
+
+.contenidosec {
+    display: flex;
+}
+
+.textoc {
+    padding-top: 25px ;
+    padding-left: 15px; /* Espacio entre la imagen y el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: BlenderPro;
+    color: #737373;
+}
+
+.titulo-seccion {
+    font-family: 'BlenderPro_Bold';
+    font-size: 1em; /* Ajusta el tamaño del título según sea necesario */
+    margin-bottom: 5px; /* Espacio entre el título y el párrafo */
+    color: white;
+}
+
+p{
+    font-size: 12px;
+}
+
+body h3{
+    font-family: 'BlenderPro_Bold';
+    font-size: 24px;
+    color: white;
+}
+
+
+
+.cuadrado-gris {
+    width: 56px;
+    height: 56px;
+    background-color: rgb(19, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuadrado-rojo {
+    width: 32px;
+    height: 32px;
+    background-color: #E5062F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-centrada {
+    width: 24px; /* 32px - 2 * 4px de padding = 24px */
+    height: 24px; /* 32px - 2 * 4px de padding = 24px */
+    padding: 4px;
+}
+
+
+.logros{
+    padding-top: 20px;
+}
+
+
+.textologros{
+    padding-left: 15px; /* Espacio entre la imagen y el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: BlenderPro;
+    color: #737373;
+}
+
+.titulogro{
+    padding-bottom: 30px;
+    font-family: 'BlenderPro_Bold';
+    font-size: 1em; /* Ajusta el tamaño del título según sea necesario */
+    color: white;
 }
